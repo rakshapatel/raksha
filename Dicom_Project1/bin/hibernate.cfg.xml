@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+<property name="connection.driver_class">com.mysql.jdbc.Driver
+</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/dicom_one</property>
+<property name="connection.username">root</property>
+<property name="connection.password">root</property>
+
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="show_sql">true</property>
+<property name="hbm2ddl.auto">update</property>
+<mapping class="DTO.Address" />
+<mapping class="DTO.Company" />
+<mapping class="DTO.Role" />
+<mapping class="DTO.Circle" />
+<mapping class="DTO.Distcenter_Zone" />
+<mapping class="DTO.Region" />
+<mapping class="DTO.SubDivision" />
+<mapping class="DTO.Division" />
+<mapping class="DTO.User" />
+
+
+
+</session-factory>
+</hibernate-configuration>
